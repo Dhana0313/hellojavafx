@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -16,9 +17,9 @@
       <Insets />
    </opaqueInsets>
    <left>
-      <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #C0C0C0;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="brandingImageView" fitHeight="407.0" fitWidth="228.0" layoutX="1.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="brandingImageView" fitHeight="381.0" fitWidth="228.0" layoutX="7.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images.jpeg" />
                </image>
@@ -41,12 +42,15 @@
                </font>
             </Label>
             <PasswordField fx:id="enterPasswordField" layoutX="104.0" layoutY="181.0" promptText="Password" />
-            <Button fx:id="loginButton" layoutX="22.0" layoutY="258.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="32.0" prefWidth="240.0" style="-fx-background-color: #D96151;" text="Login">
+            <Button fx:id="loginButton" layoutX="25.0" layoutY="257.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="32.0" prefWidth="111.0" style="-fx-background-color: #0D58C9;" text="Login" textFill="#f3f7fd">
                <font>
                   <Font size="13.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <Button fx:id="cancelButton" layoutX="22.0" layoutY="306.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="240.0" style="-fx-background-color: #D96151;" text="Cancel">
+            <Button fx:id="cancelButton" layoutX="25.0" layoutY="318.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="240.0" style="-fx-background-color: #0D58C9;" text="Cancel" textFill="#f3f7fd">
                <font>
                   <Font size="13.0" />
                </font>
@@ -54,6 +58,16 @@
             <Label fx:id="loginMessageLabel" alignment="TOP_CENTER" layoutX="15.0" layoutY="222.0" prefHeight="19.0" prefWidth="262.0" textFill="#ec1414">
                <font>
                   <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerButton" layoutX="155.0" layoutY="257.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="106.0" style="-fx-background-color: #0D58C9;" text="Register" textFill="#f3f7fd">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="29.0" layoutY="41.0" prefHeight="39.0" prefWidth="234.0" style="-fx-background-color: #BDECFF;" text="Welcome To Sea Explorer App" textFill="#032643">
+               <font>
+                  <Font size="14.0" />
                </font>
             </Label>
          </children></AnchorPane>
