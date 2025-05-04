@@ -4,6 +4,7 @@ module com.example.hellojavafx {
     requires javafx.controls;
     requires java.sql;
     requires java.desktop;
+    requires mysql.connector.j;
     //requires mysql.connector.java;
 
     opens com.example.hellojavafx;
